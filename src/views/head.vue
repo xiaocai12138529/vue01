@@ -26,8 +26,8 @@ export default {
       get () {
         return this.list.every(item => item.isDone)
       },
-      set () {
-        this.list.forEach(item => item.isDone = true)
+      set (val) {
+        this.list.forEach(item => item.isDone = val)
       }
     }
   },
